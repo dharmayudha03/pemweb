@@ -4,8 +4,8 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 class DatabaseSeeder extends Seeder
 {
@@ -43,12 +43,19 @@ class DatabaseSeeder extends Seeder
      */
     private function seedUsers(): void
     {
-        // Create roles
-        $adminRole = Role::firstOrCreate(['name' => 'super_admin']);
-        $userRole = Role::firstOrCreate(['name' => 'User']);
+        $subjectRole = Role::firstOrCreate(['name' => 'subject']);
+        $assesorRole = Role::firstOrCreate(['name' => 'assesor']);
 
-        // Assign Analyze permissions to User role
-        $userRole->givePermissionTo([
+        $subjectRole->givePermissionTo([
+            'create_analyze',
+            'edit_analyze',
+            'delete_analyze',
+            'update_analyze',
+            'view_analyze',
+            'view_any_analyze',
+        ]);
+
+        $assesorRole->givePermissionTo([
             'create_analyze',
             'edit_analyze',
             'delete_analyze',
@@ -59,19 +66,26 @@ class DatabaseSeeder extends Seeder
 
         // Create admin user
         $admin = \App\Models\User::factory()->create([
-            'name' => 'Admin',
+            'name' => 'Dharmayudha',
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin'),
         ]);
         $admin->assignRole('super_admin');
 
         // Create regular user
-        $user = \App\Models\User::factory()->create([
-            'name' => 'User',
-            'email' => 'user@user.com',
-            'password' => bcrypt('user'),
+        $subject = \App\Models\User::factory()->create([
+            'name' => 'Adam Bagaskara',
+            'email' => 'subject@gmail.com',
+            'password' => bcrypt('subject'),
         ]);
-        $user->assignRole('User');
+        $subject->assignRole('subject');
+
+        $assesor = \App\Models\User::factory()->create([
+            'name' => 'Aqil Muniq I',
+            'email' => 'assesor@gmail.com',
+            'password' => bcrypt('assesor'),
+        ]);
+        $assesor->assignRole('assesor');
     }
 
     /**

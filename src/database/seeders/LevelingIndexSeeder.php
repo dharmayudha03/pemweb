@@ -25,11 +25,11 @@ class LevelingIndexSeeder extends Seeder
                 LevelingIndex::firstOrCreate(
                     [
                         'name' => $level,           // Condition to check if record exists
-                        'indicator_id' => $indicatorId  // Condition for indicator_id
-                    ], 
+                        'indicator_id' => $indicatorId,  // Condition for indicator_id
+                    ],
                     [
                         'name' => $level,
-                        'indicator_id' => $indicatorId   // Values to create if it doesn't exist
+                        'indicator_id' => $indicatorId,   // Values to create if it doesn't exist
                     ]
                 );
             }

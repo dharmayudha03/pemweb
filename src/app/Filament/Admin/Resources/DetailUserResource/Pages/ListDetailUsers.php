@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Filament\Admin\Resources\RecomendationResource\Pages;
+namespace App\Filament\Admin\Resources\DetailUserResource\Pages;
 
-use App\Filament\Admin\Resources\RecomendationResource;
+use App\Filament\Admin\Resources\DetailUserResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Contracts\Support\Htmlable;
 
-class ListRecomendations extends ListRecords
+class ListDetailUsers extends ListRecords
 {
-    protected static string $resource = RecomendationResource::class;
+    protected static string $resource = DetailUserResource::class;
 
     protected function getHeaderActions(): array
     {
@@ -20,6 +20,6 @@ class ListRecomendations extends ListRecords
 
     public function getTitle(): string|Htmlable
     {
-        return 'Recomendation';
+        return 'Detail User';
     }
 }

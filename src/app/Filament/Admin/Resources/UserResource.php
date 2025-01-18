@@ -21,6 +21,7 @@ class UserResource extends Resource
     protected static ?string $navigationGroup = 'Administration';
 
     protected static ?string $recordTitleAttribute = 'name';
+
     protected static ?string $navigationLabel = 'User';
 
     protected static ?int $navigationSort = -2;
@@ -69,7 +70,9 @@ class UserResource extends Resource
                             ->prefixIcon('heroicon-m-envelope')
                             ->columnSpan('full')
                             ->email(),
-
+                        Forms\Components\Select::make('roles')
+                            ->relationship('roles', 'name')
+                            ->preload(),
                         Forms\Components\TextInput::make('password')
                             ->password()
                             ->confirmed()

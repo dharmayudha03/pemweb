@@ -17,6 +17,7 @@ class SubjectResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     protected static ?string $navigationGroup = 'Master Data';
+
     protected static ?string $navigationLabel = 'Subject';
 
     protected static ?int $navigationSort = 1;
@@ -31,13 +32,13 @@ class SubjectResource extends Resource
         return $form
             ->schema([
                 Forms\Components\Card::make()
-                ->schema([
-                    Forms\Components\TextInput::make('name')
-                        ->label('Subject')
-                        ->autocomplete(false)
-                        ->suffixIcon('heroicon-m-globe-alt')
-                        ->required(),
-                ]),
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->label('Subject')
+                            ->autocomplete(false)
+                            ->suffixIcon('heroicon-m-globe-alt')
+                            ->required(),
+                    ]),
             ]);
     }
 

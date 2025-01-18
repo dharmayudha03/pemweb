@@ -3,13 +3,13 @@
 namespace App\Filament\Admin\Resources\DetailLevelingIndexResource\Pages;
 
 use App\Filament\Admin\Resources\DetailLevelingIndexResource;
-use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
 class CreateDetailLevelingIndex extends CreateRecord
 {
     protected static string $resource = DetailLevelingIndexResource::class;
-    protected function getRedirectUrl():string
+
+    protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
     }

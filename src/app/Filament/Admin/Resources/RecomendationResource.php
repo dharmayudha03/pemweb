@@ -3,7 +3,6 @@
 namespace App\Filament\Admin\Resources;
 
 use App\Filament\Admin\Resources\RecomendationResource\Pages;
-use App\Filament\Admin\Resources\RecomendationResource\RelationManagers;
 use App\Models\DetailLevelingIndex;
 use App\Models\Recomendation;
 use Filament\Forms;
@@ -13,8 +12,6 @@ use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Collection;
 
 class RecomendationResource extends Resource
@@ -24,6 +21,7 @@ class RecomendationResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     protected static ?string $navigationGroup = 'Master Data';
+
     protected static ?string $navigationLabel = 'Recomendation';
 
     protected static ?int $navigationSort = 2;
@@ -56,6 +54,7 @@ class RecomendationResource extends Resource
                                     return \App\Models\LevelingIndex::where('indicator_id', $indicatorId)
                                         ->pluck('name', 'id');
                                 }
+
                                 return [];
                             })
                             ->reactive()
@@ -77,7 +76,6 @@ class RecomendationResource extends Resource
                             ->afterStateUpdated(fn(Set $set) => $set('recomendation_id', null)),
                     ])->columns(2),
 
-
                 Forms\Components\Textarea::make('recommend')
                     ->required()
                     ->columnSpanFull(),
@@ -98,6 +96,9 @@ class RecomendationResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('detailLevelingIndices.detail')
                     ->label('Detail Leveling Index')
+                    ->wrap(),
+                Tables\Columns\TextColumn::make('recommend')
+                    ->label('Rekomendasi')
                     ->wrap(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

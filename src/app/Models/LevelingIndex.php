@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class LevelingIndex extends Model
 {
     use HasFactory;
+
     protected $guarded = [];
 
     public function indicator(): BelongsTo
@@ -19,16 +20,16 @@ class LevelingIndex extends Model
 
     public function detailLevelingIndices(): HasMany
     {
-        return $this->hasMany(DetailLevelingIndex::class, 'detail_leveling_index_id');
+        return $this->hasMany(DetailLevelingIndex::class, 'leveling_index_id');
     }
 
     public function recomendation(): HasMany
     {
-        return $this->hasMany(Recomendation::class, 'recomendation_id');
+        return $this->hasMany(Recomendation::class, 'leveling_index_id');
     }
 
     public function analyze(): HasMany
     {
-        return $this->hasMany(Analyze::class, 'analyze_id');
+        return $this->hasMany(Analyze::class, 'leveling_index_id');
     }
 }

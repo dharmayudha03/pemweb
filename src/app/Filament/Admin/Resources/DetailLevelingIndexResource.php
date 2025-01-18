@@ -4,16 +4,13 @@ namespace App\Filament\Admin\Resources;
 
 use App\Filament\Admin\Resources\DetailLevelingIndexResource\Pages;
 use App\Models\DetailLevelingIndex;
-use App\Models\LevelingIndex;
 use Filament\Forms;
-use Filament\Forms\Components\Builder;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Support\Collection;
 
 class DetailLevelingIndexResource extends Resource
 {
@@ -22,6 +19,7 @@ class DetailLevelingIndexResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     protected static ?string $navigationGroup = 'Master Data';
+
     protected static ?string $navigationLabel = 'Detail Leveling Index';
 
     protected static ?int $navigationSort = -2;
@@ -56,6 +54,7 @@ class DetailLevelingIndexResource extends Resource
                                     return \App\Models\LevelingIndex::where('indicator_id', $indicatorId)
                                         ->pluck('name', 'id');
                                 }
+
                                 return [];
                             })
                             ->live()

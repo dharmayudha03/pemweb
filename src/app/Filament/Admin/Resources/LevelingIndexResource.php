@@ -17,6 +17,7 @@ class LevelingIndexResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     protected static ?string $navigationGroup = 'Master Data';
+
     protected static ?string $navigationLabel = 'Leveling Index';
 
     protected static ?int $navigationSort = -3;
@@ -40,7 +41,7 @@ class LevelingIndexResource extends Resource
                             ->label('Leveling Index')
                             ->required()
                             ->autocomplete(false),
-                    ])->columns(2)
+                    ])->columns(2),
 
             ]);
     }

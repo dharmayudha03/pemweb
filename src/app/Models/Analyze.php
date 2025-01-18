@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Analyze extends Model
 {
     use HasFactory;
+
     protected $guarded = [];
 
     public function levelingIndices(): BelongsTo
@@ -20,6 +21,7 @@ class Analyze extends Model
     {
         return $this->belongsTo(Indicator::class, 'indicator_id');
     }
+
     public function recomendation(): BelongsTo
     {
         return $this->belongsTo(Recomendation::class, 'recomendation_id');

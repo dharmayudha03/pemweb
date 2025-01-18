@@ -15,13 +15,13 @@ class DomainSeeder extends Seeder
     {
 
         $timestamp = Carbon::now()->toDateString();
-        $domain = array(
-            array('name' => 'Domain Kebijakan', 'created_at' => $timestamp, 'updated_at' => $timestamp),
-            array('name' => 'Domain Tata Kelola', 'created_at' => $timestamp, 'updated_at' => $timestamp),
-            array('name' => 'Domain Manajemen', 'created_at' => $timestamp, 'updated_at' => $timestamp),
-            array('name' => 'Domain Layanan', 'created_at' => $timestamp, 'updated_at' => $timestamp),
-        );
-        
+        $domain = [
+            ['name' => 'Domain Kebijakan', 'created_at' => $timestamp, 'updated_at' => $timestamp],
+            ['name' => 'Domain Tata Kelola', 'created_at' => $timestamp, 'updated_at' => $timestamp],
+            ['name' => 'Domain Manajemen', 'created_at' => $timestamp, 'updated_at' => $timestamp],
+            ['name' => 'Domain Layanan', 'created_at' => $timestamp, 'updated_at' => $timestamp],
+        ];
+
         DB::table('domains')->insert($domain);
 
     }

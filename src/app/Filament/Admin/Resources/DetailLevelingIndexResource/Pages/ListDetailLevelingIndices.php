@@ -17,6 +17,7 @@ class ListDetailLevelingIndices extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+
     public function getTitle(): string|Htmlable
     {
         return 'Detail Leveling Index';

@@ -17,6 +17,7 @@ class ListAspects extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+
     public function getTitle(): string|Htmlable
     {
         return 'Aspect';

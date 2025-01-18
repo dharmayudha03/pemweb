@@ -10,7 +10,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Recomendation extends Model
 {
     use HasFactory;
+
     protected $guarded = [];
+
     public function levelingIndices(): BelongsTo
     {
         return $this->belongsTo(LevelingIndex::class, 'leveling_index_id');
@@ -25,8 +27,9 @@ class Recomendation extends Model
     {
         return $this->belongsTo(DetailLevelingIndex::class, 'detail_leveling_index_id');
     }
+
     public function analyze(): HasMany
     {
-        return $this->hasMany(Analyze::class, 'analyze_id');
+        return $this->hasMany(Analyze::class, 'recomendation_id');
     }
 }

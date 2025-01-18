@@ -18,6 +18,7 @@ class IndicatorResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     protected static ?string $navigationGroup = 'Master Data';
+
     protected static ?string $navigationLabel = 'Indicator';
 
     protected static ?int $navigationSort = 0;
@@ -121,6 +122,4 @@ class IndicatorResource extends Resource
             'edit' => Pages\EditIndicator::route('/{record}/edit'),
         ];
     }
-
-
 }

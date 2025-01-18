@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Carbon\Carbon;
 
 class IndicatorSeeder extends Seeder
 {
@@ -19,7 +19,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 1',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Arsitektur SPBE Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Arsitektur SPBE adalah kerangka dasar yang mendeskripsikan integrasi proses bisnis, data dan informasi, infrastruktur SPBE, aplikasi SPBE, dan keamanan SPBE untuk menghasilkan layanan SPBE yang terintegrasi.
@@ -39,7 +39,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 2',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Peta Rencana SPBE Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Peta Rencana SPBE adalah dokumen yang mendeskripsikan arah dan langkah penyiapan dan pelaksanaan SPBE yang terintegrasi.
@@ -60,7 +60,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 3',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Manajemen Data.',
                 'detail' => 'a. Manajemen Data bertujuan untuk menjamin terwujudnya data yang akurat, mutakhir, terintegrasi, dan dapat diakses sebagai dasar perencanaan, pelaksanaan, evaluasi, dan pengendalian pembangunan nasional.
@@ -75,7 +75,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 4',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Pembangunan Aplikasi SPBE.',
                 'detail' => 'a. Aplikasi SPBE adalah satu atau sekumpulan program komputer dan prosedur yang dirancang untuk melakukan tugas atau fungsi Layanan SPBE.
@@ -97,7 +97,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 5',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Layanan Pusat Data.',
                 'detail' => 'a. Layanan Pusat Data adalah penyediaan penyimpanan aplikasi dan data.
@@ -113,7 +113,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 6',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Layanan Jaringan Intra Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Jaringan Intra adalah jaringan tertutup yang menghubungkan antar simpul jaringan dalam suatu organisasi.
@@ -129,7 +129,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 7',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Penggunaan Sistem Penghubung Layanan Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Sistem Penghubung Layanan adalah perangkat integrasi/penghubung untuk melakukan pertukaran Layanan SPBE.
@@ -146,7 +146,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 8',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Manajemen Keamanan Informasi.',
                 'detail' => 'a. Manajemen Keamanan Informasi dilakukan melalui serangkaian proses yang meliputi penetapan ruang lingkup, penetapan penanggung jawab, perencanaan, dukungan pengoperasian, evaluasi kinerja, dan perbaikan berkelanjutan terhadap keamanan informasi dalam SPBE.
@@ -160,7 +160,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 9',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Audit TIK.',
                 'detail' => 'a. Audit Teknologi Informasi dan Komunikasi (TIK) adalah proses yang sistematis untuk memperoleh dan mengevaluasi bukti secara objektif terhadap aset teknologi informasi dan komunikasi dengan tujuan untuk menetapkan tingkat kesesuaian antara teknologi informasi dan komunikasi dengan kriteria dan/atau standar yang telah ditetapkan.
@@ -182,7 +182,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 1,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 10',
                 'other_name' => 'Tingkat Kematangan Kebijakan Internal Tim Koordinasi SPBE Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Tim Koordinasi SPBE Instansi Pusat/Pemerintah Daerah adalah para pejabat dalam tim yang diberi tugas untuk mengendalikan, mengarahkan, dan mengevaluasi SPBE, termasuk didalamnya melaksanakan perumusan kebijakan dan penerapan SPBE di Instansi Pusat dan Pemerintah Daerah masing-masing.
@@ -196,7 +196,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 2,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 11',
                 'other_name' => 'Tingkat Kematangan Arsitektur SPBE Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Arsitektur SPBE adalah kerangka dasar yang mendeskripsikan integrasi proses bisnis, data dan informasi, infrastruktur SPBE, aplikasi SPBE, dan keamanan SPBE untuk menghasilkan layanan SPBE yang terintegrasi.
@@ -213,7 +213,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 2,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 12',
                 'other_name' => 'Tingkat Kematangan Peta Rencana SPBE Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Peta Rencana SPBE adalah dokumen yang mendeskripsikan arah dan langkah penyiapan dan pelaksanaan SPBE yang terintegrasi.
@@ -233,7 +233,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 2,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 13',
                 'other_name' => 'Tingkat Kematangan Keterpaduan Rencana dan Anggaran SPBE.',
                 'detail' => 'a. Rencana dan Anggaran SPBE adalah dokumen yang mendeskripsikan program, kegiatan dan pemanfaatan anggaran SPBE.
@@ -247,7 +247,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 2,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 14',
                 'other_name' => 'Tingkat Kematangan Inovasi Proses Bisnis SPBE.',
                 'detail' => 'a. Proses Bisnis adalah dokumen yang mendeskripsikan hubungan kerja yang efektif dan efisien antar unit organisasi untuk menghasilkan kinerja sesuai dengan tujuan pendirian organisasi agar menghasilkan keluaran yang bernilai tambah bagi pemangku kepentingan (PermenPANRB No 19 Tahun 2018).
@@ -261,7 +261,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 3,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 15',
                 'other_name' => 'Tingkat Kematangan Pembangunan Aplikasi SPBE.',
                 'detail' => 'a. Aplikasi SPBE adalah satu atau sekumpulan program komputer dan prosedur yang dirancang untuk melakukan tugas atau fungsi Layanan SPBE.
@@ -282,7 +282,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 3,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 16',
                 'other_name' => 'Tingkat Kematangan Layanan Pusat Data.',
                 'detail' => 'a. Pusat Data adalah fasilitas yang digunakan untuk penempatan sistem elektronik dan komponen terkait lainnya untuk keperluan penempatan, penyimpanan dan pengolahan data, dan pemulihan data baik yang dimiliki secara fisik dan non-fisik (cloud).
@@ -297,7 +297,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 3,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 17',
                 'other_name' => 'Tingkat Kematangan Layanan Jaringan Intra Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Jaringan Intra adalah jaringan tertutup yang menghubungkan antar simpul jaringan dalam suatu organisasi.
@@ -312,7 +312,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 3,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 18',
                 'other_name' => 'Tingkat Kematangan Penggunaan Sistem Penghubung Layanan Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Sistem Penghubung Layanan adalah perangkat integrasi/penghubung untuk melakukan pertukaran Layanan SPBE.
@@ -325,7 +325,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 1,
                 'aspect_id' => 4,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 19',
                 'other_name' => 'Tingkat Kematangan Tim Koordinasi SPBE Instansi Pusat/Pemerintah Daerah.',
                 'detail' => 'a. Tim Koordinasi SPBE Instansi Pusat/Pemerintah Daerah adalah para pejabat dalam tim yang diberi tugas untuk mengendalikan, mengarahkan, dan mengevaluasi SPBE, termasuk didalamnya melaksanakan perumusan kebijakan dan penerapan SPBE di Instansi Pusat dan Pemerintah Daerah masing-masing.
@@ -339,7 +339,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 4,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 20',
                 'other_name' => 'Tingkat Kematangan Kolaborasi Penerapan SPBE.',
                 'detail' => 'a. Forum Kolaborasi SPBE merupakan wadah informal untuk pertukaran informasi dan peningkatan kapasitas pelaksanaan SPBE bagi Instansi Pusat, Pemerintah Daerah, perguruan tinggi, lembaga penelitian, pelaku usaha, dan masyarakat.
@@ -359,7 +359,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 21',
                 'other_name' => 'Tingkat Kematangan Penerapan Manajemen Risiko SPBE.',
                 'detail' => 'a. Manajemen Risiko SPBE adalah pendekatan sistematis yang meliputi proses, pengukuran, struktur, dan budaya untuk menentukan tindakan terbaik terkait Risiko SPBE;
@@ -374,7 +374,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 22',
                 'other_name' => 'Tingkat Kematangan Penerapan Manajemen Keamanan Informasi.',
                 'detail' => 'a. Manajemen Keamanan Informasi dilakukan melalui serangkaian proses yang meliputi penetapan ruang lingkup, penetapan penanggung jawab, perencanaan, dukungan pengoperasian, evaluasi kinerja, dan perbaikan berkelanjutan terhadap Keamanan Informasi dalam SPBE.
@@ -388,7 +388,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 23',
                 'other_name' => 'Tingkat Kematangan Penerapan Manajemen Data.',
                 'detail' => 'a. Manajemen Data dilakukan melalui serangkaian proses pengelolaan arsitektur data, data induk, data referensi, basis data, kualitas data dan interoperabilitas data.
@@ -401,7 +401,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 24',
                 'other_name' => 'Tingkat Kematangan Penerapan Manajemen Aset TIK.',
                 'detail' => 'a. Manajemen aset teknologi informasi dan komunikasi dilakukan melalui serangkaian proses perencanaan, pengadaan, pengelolaan, dan penghapusan perangkat keras dan perangkat lunak yang digunakan dalam SPBE.
@@ -415,7 +415,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 25',
                 'other_name' => 'Tingkat Kematangan Kompetensi Sumber Daya Manusia.',
                 'detail' => 'a. Pemenuhan kompetensi Sumber Daya Manusia SPBE bertujuan untuk menjamin keberlangsungan dan peningkatan mutu layanan dalam SPBE.
@@ -429,7 +429,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 26',
                 'other_name' => 'Tingkat Kematangan Penerapan Manajemen Pengetahuan.',
                 'detail' => 'Manajemen Pengetahuan adalah proses yang dilakukan untuk mendokumentasi pengalaman dan pengetahuan dalam perencanaan, implementasi, dan evaluasi SPBE guna meningkatkan kualitas Layanan SPBE dan mendukung proses pengambilan keputusan dalam SPBE.',
@@ -441,7 +441,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 2,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 27',
                 'other_name' => 'Tingkat Kematangan Penerapan Manajemen Perubahan.',
                 'detail' => 'a. Manajemen Perubahan dilakukan melalui serangkaian proses perencanaan, analisis, pengembangan, implementasi, pemantauan dan evaluasi terhadap perubahan SPBE.
@@ -465,7 +465,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 3,
                 'aspect_id' => 5,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 28',
                 'other_name' => 'Tingkat Kematangan Penerapan Manajemen Layanan SPBE.',
                 'detail' => 'a. Manajemen Layanan merupakan serangkaian proses pelayanan kepada pengguna, pengoperasian layanan, dan pengelolaan Aplikasi SPBE agar Layanan SPBE dapat berjalan berkesinambungan dan berkualitas.
@@ -483,7 +483,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 3,
                 'aspect_id' => 6,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 29',
                 'other_name' => 'Tingkat Kematangan Pelaksanaan Audit Infrastruktur SPBE.',
                 'detail' => 'a. Audit Infrastruktur SPBE Instansi Pusat dan Pemerintah Daerah dilaksanakan berdasarkan standar dan tata cara pelaksanaan Audit Infrastruktur SPBE. 
@@ -501,7 +501,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 3,
                 'aspect_id' => 6,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 30',
                 'other_name' => 'Tingkat Kematangan Pelaksanaan Audit Aplikasi SPBE.',
                 'detail' => 'a. Audit Aplikasi SPBE Instansi Pusat dan Pemerintah Daerah dilaksanakan berdasarkan standar dan tata cara pelaksanaan Audit Aplikasi SPBE. 
@@ -517,7 +517,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 3,
                 'aspect_id' => 6,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 31',
                 'other_name' => 'Tingkat Kematangan Pelaksanaan Audit Keamanan SPBE.',
                 'detail' => 'a. Audit Keamanan SPBE Instansi Pusat dan  Pemerintah Daerah dilaksanakan berdasarkan standar dan tata cara pelaksanaan Audit Keamanan SPBE. 
@@ -533,7 +533,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 32',
                 'other_name' => 'Tingkat Kematangan Layanan Perencanaan.',
                 'detail' => 'a. Perencanaan adalah serangkaian proses untuk menghasilkan pengelolaan perencanaan yang efektif, efisien, dan akuntabel. 
@@ -546,7 +546,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 33',
                 'other_name' => 'Tingkat Kematangan Layanan Penganggaran.',
                 'detail' => 'a. Penganggaran adalah serangkaian proses untuk menghasilkan pengelolaan penganggaran yang efektif, efisien, dan akuntabel. 
@@ -559,7 +559,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 34',
                 'other_name' => 'Tingkat Kematangan Layanan Keuangan',
                 'detail' => 'a. Keuangan adalah serangkaian proses untuk menghasilkan pengelolaan keuangan yang efektif, efisien, dan akuntabel.
@@ -572,7 +572,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 35',
                 'other_name' => 'Tingkat Kematangan Layanan Pengadaan Barang dan Jasa',
                 'detail' => 'a. Pengadaan Barang/Jasa adalah serangkaian proses untuk menghasilkan pengelolaan Pengadaan barang/jasa yang efektif, efisien, dan akuntabel.
@@ -587,7 +587,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 36',
                 'other_name' => 'Tingkat Kematangan Layanan Kepegawaian',
                 'detail' => 'a. Kepegawaian adalah serangkaian proses untuk menghasilkan pengelolaan kepegawaian yang efektif, efisien, dan akuntabel.
@@ -600,7 +600,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 37',
                 'other_name' => 'Tingkat Kematangan Layanan Kearsipan Dinamis',
                 'detail' => 'a. Kearsipan adalah serangkaian proses untuk menghasilkan pengelolaan kearsipan yang efektif, efisien, dan akuntabel.
@@ -616,7 +616,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 38',
                 'other_name' => 'Tingkat Kematangan Layanan Pengelolaan Barang Milik Negara/Daerah',
                 'detail' => 'a. Pengelolaan Barang Milik Negara/Daerah (BMN/BMD) adalah serangkaian proses untuk menghasilkan pengelolaan BMN yang efektif, efisien, dan akuntabel. 
@@ -626,11 +626,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 39',
                 'other_name' => 'Tingkat Kematangan Layanan Pengawasan Internal terkait Pemerintah',
                 'detail' => 'a. Pengawasan Internal adalah serangkaian proses untuk menghasilkan pengelolaan pengawasan internal yang efektif, efisien, dan akuntabel. 
@@ -640,11 +640,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 40',
                 'other_name' => 'Tingkat Kematangan Layanan Akuntabilitas Kinerja Organisasi',
                 'detail' => 'a. Akuntabilitas Kinerja Instansi Pusat/Pemerintah Daerah adalah serangkaian proses untuk menghasilkan pengelolaan Akuntabilitas Kinerja yang efektif, efisien, dan akuntabel. 
@@ -654,11 +654,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 41',
                 'other_name' => 'Tingkat Kematangan Layanan Kinerja Pegawai',
                 'detail' => 'a. Kinerja Pegawai adalah serangkaian proses untuk menghasilkan pengelolaan kinerja pegawai Instansi Pusat/Pemerintah Daerah yang efektif, efisien, dan akuntabel.
@@ -668,11 +668,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 42',
                 'other_name' => 'Tingkat Kematangan Layanan Pengaduan Pelayanan Publik',
                 'detail' => 'a. Pengaduan Pelayanan Publik adalah serangkaian proses untuk menghasilkan pengelolaan pengaduan pelayanan publik Instansi Pusat/Pemerintah Daerah yang efektif, efisien, dan akuntabel.
@@ -682,11 +682,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 43',
                 'other_name' => 'Tingkat Kematangan Layanan Data Terbuka',
                 'detail' => 'a. Layanan Data Terbuka merupakan konsep berbagi pakai data sesuai dengan ketentuan Satu Data Indonesia. 
@@ -700,7 +700,7 @@ class IndicatorSeeder extends Seeder
             [
                 'domain_id' => 4,
                 'aspect_id' => 7,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 44',
                 'other_name' => 'Tingkat Kematangan Layanan Jaringan Dokumentasi dan Informasi Hukum (JDIH).',
                 'detail' => 'a. Jaringan Dokumentasi dan Informasi Hukum adalah serangkaian proses untuk menghasilkan pengelolaan jaringan dokumentasi dan informasi hukum Instansi Pusat/Pemerintah Daerah yang efektif, efisien, dan akuntabel. 
@@ -710,11 +710,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 8,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 45',
                 'other_name' => 'Tingkat Kematangan Layanan Publik Sektoral 1.',
                 'detail' => 'a. Layanan Publik Sektor adalah serangkaian proses untuk menghasilkan pengelolaan tugas dan fungsi sektoral Instansi Pusat/Pemerintah Daerah yang efektif, efisien, dan akuntabel. 
@@ -726,11 +726,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 8,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 46',
                 'other_name' => 'Tingkat Kematangan Layanan Publik Sektoral 2.',
                 'detail' => 'a. Layanan Publik Sektor adalah serangkaian proses untuk menghasilkan pengelolaan tugas dan fungsi sektoral Instansi Pusat/Pemerintah Daerah yang efektif, efisien, dan akuntabel. 
@@ -742,11 +742,11 @@ class IndicatorSeeder extends Seeder
                 'created_at' => $timestamp,
                 'updated_at' => $timestamp,
             ],
-            
+
             [
                 'domain_id' => 4,
                 'aspect_id' => 8,
-                'subject_id' => NULL,
+                'subject_id' => null,
                 'name' => 'Indikator 47',
                 'other_name' => 'Tingkat Kematangan Layanan Publik Sektoral 3.',
                 'detail' => 'a. Layanan Publik Sektor adalah serangkaian proses untuk menghasilkan pengelolaan tugas dan fungsi sektoral Instansi Pusat/Pemerintah Daerah yang efektif, efisien, dan akuntabel. 

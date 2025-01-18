@@ -17,6 +17,7 @@ class DomainResource extends Resource
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     protected static ?string $navigationGroup = 'Master Data';
+
     protected static ?string $navigationLabel = 'Domain';
 
     protected static ?int $navigationSort = -5;

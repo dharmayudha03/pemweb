@@ -6,20 +6,24 @@ use App\Filament\Admin\Resources\AnalyzeResource\Pages;
 use App\Models\Analyze;
 use App\Models\DetailLevelingIndex;
 use App\Models\Recomendation;
+use App\Models\Subject;
+use BezhanSalleh\FilamentShield\Contracts\HasShieldPermissions;
 use Filament\Forms;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use BezhanSalleh\FilamentShield\Contracts\HasShieldPermissions;
-use Filament\Forms\Get;
-use Filament\Forms\Set;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
 
 class AnalyzeResource extends Resource implements HasShieldPermissions
 {
     protected static ?string $model = Analyze::class;
+
     protected static ?string $navigationLabel = 'Analyze';
+
     protected static ?string $navigationIcon = 'heroicon-o-square-2-stack';
 
     public static function form(Form $form): Form
@@ -34,7 +38,19 @@ class AnalyzeResource extends Resource implements HasShieldPermissions
                             ->required()
                             ->preload()
                             ->live()
-                            ->relationship('subject', 'name')
+                            ->options(function () {
+                                $user = Auth::user();
+
+                                if ($user->name === 'Dharmayudha') {
+                                    return Subject::pluck('name', 'id');
+                                } elseif ($user->name === 'Subject') {
+                                    return Subject::where('user_id', $user->id)->pluck('name', 'id');
+                                } elseif ($user->name === 'Assessor') {
+                                    return Subject::where('user_id', $user->id)->pluck('name', 'id');
+                                } else {
+                                    return collect();
+                                }
+                            })
                             ->reactive(),
                     ]),
                 Forms\Components\Section::make('Instrumen Pemantauan dan Evaluasi SPBE')
@@ -60,6 +76,7 @@ class AnalyzeResource extends Resource implements HasShieldPermissions
                                     return \App\Models\LevelingIndex::where('indicator_id', $indicatorId)
                                         ->pluck('name', 'id');
                                 }
+
                                 return [];
                             })
                             ->live()
@@ -95,6 +112,11 @@ class AnalyzeResource extends Resource implements HasShieldPermissions
                                     ->where('leveling_index_id', $get('leveling_index_id'))
                                     ->where('detail_leveling_index_id', $get('detail_leveling_index_id'))
                                     ->pluck('recommend', 'id');
+                            })
+                            ->disabled(function () {
+                                $user = Auth::user();
+
+                                return $user->name === 'Subject';
                             }),
                     ])->columns(2),
 
@@ -155,7 +177,7 @@ class AnalyzeResource extends Resource implements HasShieldPermissions
             'create',
             'update',
             'delete',
-            'delete_any'
+            'delete_any',
         ];
     }
 }
